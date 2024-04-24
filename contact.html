@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
+
+    <style>
+        
+    /* common properties] */
+    *{
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    }
+    body{
+    overflow-x: auto; 
+    max-width: 100%; 
+    margin: 0;
+
+    }
+
+    :root{
+        --b:blue;
+        --w:white;
+    }
+    
+    .h1s{
+        transition: all 2s;
+
+        font-size: 36px;
+            font-weight: bold;
+            color: black;
+            transition: font-size 0.5s ease, color 0.5s ease;
+        text-shadow: 1px 1px 5px rgb(28, 28, 179);
+
+    }
+    .h1s:hover{
+        font-size: 3rem !important;
+            color: red; /* Change color on hover */
+    }
+
+
+    .h1s2{
+        text-shadow: 1px 1px 10px rgb(6, 6, 10);
+    }
+    .el2 i{
+        font-size: 90px;
+        color: blue;
+    }
+    h3{
+        color: darkblue;
+    }
+    .el1,.el2,.el3,.elfooter{
+        padding-bottom: 200px !important;
+    }
+
+
+
+    
+  /* element one styling this commmonent i used in multiple times may confuse */
+  .el1{
+        display: flex;
+        justify-content: center;
+        font-size: larger;
+        padding: 0px 2rem;
+        color: var(--w);
+        background-color: var(--b);
+    }
+    .el1 div{
+        font-size: 2.5rem;
+    }
+   
+
+
+
+    .parent{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 40px;
+    }
+    ul{
+        list-style: none;
+        background-color:white;
+        border-radius: 20px;
+        color: blue;
+        padding: 40px;
+        height: 100%;
+    }
+    ul li{
+        padding-top: 30px;
+    }
+
+    input{
+        width: 300px;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+        border: none;
+    }
+
+    button{
+        background-color: blue;
+        color:white;
+        width: 300px;
+        padding: 20px;
+        margin-top: 30px;
+        border-radius: 10px;
+
+    }
+
+
+
+
+
+    @media  screen and (max-width:650px){
+     html{
+                font-size: 11px;
+            }
+           
+ 
+
+    .h1s{
+        transition: all 2s;
+        font-size: 2rem !important;
+
+        font-size: 36px;
+            font-weight: bold;
+            color: black;
+            transition: font-size 0.5s ease, color 0.5s ease;
+    }
+   
+.h1s2{
+    font-size: 40px;
+}
+
+
+  
+    .el1{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+    .el1 div{
+        font-size: 1rem;
+    }
+    .img{
+        height: 90%;
+        width: 100%;
+        text-align: center;
+        transition: all 2s;
+    }
+
+    
+
+    .el1{
+        padding-bottom: 20px !important;
+    }
+    body p{
+        font-size: 2rem;
+    }
+
+
+    .parent{
+        display: grid;
+        grid-template-columns: auto ;
+        gap: 40px;
+        font-size: 60px;
+        text-align: center;
+    }
+ 
+    ul li{
+        padding-top: 30px;
+        font-size: 30px;
+    }
+
+
+}
+
+
+    </style>
+</head>
+<body>
+    <!-- <articel class="el1" style="font-size: 100px; width: 100vw;height: 100%;background-color: blue;color: white;margin: 0;font-size: 900;font-family: cursive;display: flex;justify-content: center;">
+        About us
+    </articel>
+     -->
+    <article class="el1">
+        <div>
+            <h1 class="h1s2" style="font-size: 4rem;text-decoration: underline;">Contact us</h1>
+            <p>Feel Free To Contact Anytime If You Have Any Questions or Needs By Phone or Email</p>
+        </div>
+    </article>
+
+    
+    <article class="el1">
+        <div>
+            <div class="parent">
+                <div class="child">
+                    <ul>
+                        <li><h1><i class="fas fa-phone"  style="color: rgb(230, 229, 224); background-color: rgb(238, 30, 144);padding: 30px; border-radius: 47%;"></i></h1></li>
+                        <li><b>+91 9398555422</b></li>
+                        <li>+0891 198198</li>
+                    </ul>
+                </div>
+
+                <div class="child">
+                    <ul>
+                        <li><h1><i class="fas fa-envelope"  style="color: rgb(230, 229, 224); background-color: orange;padding: 30px; border-radius: 47%;"></i></h1></li>
+
+
+                        <li><b>10kcoders@gmail.com</b></li>
+                        <li>support.10k@gmail.com  </li>
+                    </ul>
+                </div>
+
+                <div class="child">
+                    <ul>
+                        <li><h1><i class="fas fa-map-marker-alt"  style="color: rgb(230, 229, 224); background-color: rgb(5, 231, 54);padding: 30px; border-radius: 47%;"></i></h1></li>
+                        <li><b>Hyderabad, Kphb</b></li>
+                        <li>Road no 1, opp Trends
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+        </div>
+    </article>
+
+    <article class="el1" style="margin: 20px;border-radius: 20px;text-align: center;">
+        <div style="height:90vh;text-align: center;">
+            <h1 style="text-align: center;">
+                Get in touch now
+            </h1>
+
+            <div style="border: 1px solid red;height :70vh;background-color:rgb(227, 228, 243);border-radius: 20px;">
+            <input type="text" placeholder="Name" required><br>
+            <input type="email" placeholder="Email"><br>
+            <input type="tel" placeholder="Phone Number"><br>
+            <button>Submit</button>
+            </div>
+           
+        </div>
+    </article>
+
+    
+</body>
+</html>

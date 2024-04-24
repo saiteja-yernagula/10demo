@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+ 
+
+<style>
+    /* common properties] */
+    *{
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    }
+    body{
+    overflow-x: auto; 
+    max-width: 100%; 
+    margin: 0;
+
+    }
+
+    :root{
+        --b:blue;
+        --w:white;
+    }
+    
+    .h1s{
+        transition: all 2s;
+
+        font-size: 36px;
+            font-weight: bold;
+            color: black;
+            transition: font-size 0.5s ease, color 0.5s ease;
+        text-shadow: 1px 1px 5px rgb(28, 28, 179);
+
+    }
+    .h1s:hover{
+        font-size: 3rem !important;
+            color: red; /* Change color on hover */
+    }
+
+    .book{
+        color: white;
+        background: rgb(5, 5, 253);
+        padding: 10px;
+        width: 280px;
+        font-size: 30px;
+        border-radius: 20px;
+    }
+    .h1s2{
+        text-shadow: 1px 1px 10px rgb(6, 6, 10);
+    }
+    .el2 i{
+        font-size: 90px;
+        color: blue;
+    }
+    h3{
+        color: darkblue;
+    }
+    .el1,.el2,.el3,.elfooter{
+        padding-bottom: 200px !important;
+    }
+
+    .img:hover{
+        width: 90%;
+        transform: rotateY(-40deg); /*
+        transform: rotateZ(-10deg);
+        transform: rotateZ(10deg); */
+        /* transform: rotate(-70deg, 80deg,20deg); */
+        /* transform: rotate3d(1, 1, 0, -40deg); */
+
+         
+    }
+    a{
+        color:azure
+    }
+
+    a:hover{
+
+        color: whitesmoke;
+        text-decoration: underline lightblue;
+    }
+
+
+
+/* header related styling */
+    .elheader{
+    height: 20vh;
+    padding: 0px 2rem;
+    background-color:var(--b);
+    font-weight: 900;
+    }
+
+    nav{
+        font-size: 2.5rem;
+    }
+    nav span{
+        padding-left: 1rem;
+    }
+    .elheader h1{
+        font-size: 4.6rem;
+        font-family: cursive;
+    } 
+    .elheader{
+        color: var(--w);
+        font-weight: 800px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+
+  /* element one styling this commmonent i used in multiple times may confuse */
+    .el1{
+        display: flex;
+        font-size: larger;
+        padding: 0px 2rem;
+        color: var(--w);
+        background-color: var(--b);
+    }
+    .el1 div{
+        font-size: 2.5rem;
+    }
+    .img{
+        height: 90%;
+        width: 50%;
+        transition: all 2s;
+
+    }
+
+    /* gtid components design */
+    .el2{
+        background-color: whitesmoke;
+    }
+    .el2 h1{
+        font-size: 3rem;
+        padding-top: 4rem;
+        text-align: center;
+    }
+    .el2grid{
+        background-color: white;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 69px;
+        padding: 30px;
+    }
+    .el2grid>div{
+        height: 500px;
+        font-size: 2rem;
+        padding: 30px;
+        box-shadow: 1px 1px 20px rgba(28, 30, 175, 0.2); /* Add box-shadow here */
+        padding-top: 20%;
+        transition: all 1s;
+        border-radius: 20px;
+    
+    }
+    .el2grid>div:hover{
+background-color: rgb(159, 172, 241);
+transform: scale(1.1);
+
+    }
+
+
+    /* element -3 */
+    .el3{
+        background-color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    /* footer styling */
+
+
+    .elfooter{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        gap: 40px;
+        background-color: black;
+        color: white;
+        padding: 40px;
+        justify-content: space-between;
+        font-size: 2rem;
+    }
+    .elfooter h4{
+        padding-bottom: 2px;
+        margin-bottom: 0;
+        font-weight: 1000;
+        font-size:3rem;
+        text-decoration: underline ;
+    }
+
+   
+
+    @media  screen and (max-width:650px){
+     html{
+                font-size: 11px;
+            }
+           
+ 
+
+    .h1s{
+        transition: all 2s;
+        font-size: 2rem !important;
+
+        font-size: 36px;
+            font-weight: bold;
+            color: black;
+            transition: font-size 0.5s ease, color 0.5s ease;
+    }
+   
+.h1s2{
+    font-size: 40px;
+}
+
+
+    .elheader{
+    height: 30vh;
+    padding: 0px 1rem;
+    background-color:var(--b);
+    font-weight: 900;
+    display: flex;
+        flex-direction: column;
+    }
+    nav span:hover{
+        text-shadow: 2px 2px 2px rgb(128, 41, 0);
+    }
+
+    nav{
+        font-size: 2.3rem;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    nav span{
+        padding-left: 1rem;
+        border-bottom: 1px solid white;
+    }
+    .elheader h1{
+        font-size: 3rem;
+        font-family: cursive;
+    } 
+   
+
+  
+    .el1{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        
+    }
+    .el1 div{
+        font-size: 1rem;
+    }
+    .img{
+        height: 90%;
+        width: 100%;
+        text-align: center;
+        transition: all 2s;
+    }
+
+    
+
+
+    .el2grid{
+        grid-template-columns: auto;
+        gap: 4rem;
+        padding: 1rem;
+    }
+  
+    .el2grid>div{
+        height: 400px;
+        font-size: 2rem;
+        padding: 30px;
+        box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.2); /* Add box-shadow here */
+        padding-top: 20%;
+
+    }
+    .elfooter{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+        background-color: rgb(2, 2, 2);
+        color: white;
+        padding: 10px;
+        font-size: 1rem;
+    }
+    .elfooter h4{
+        font-size:1.5rem;
+    }
+
+   
+    .book{
+        width: 130px;
+        font-size: 1rem;
+    }
+    .el1,.el2,.el3,.elfooter{
+        padding-bottom: 20px !important;
+    }
+    body p{
+        font-size: 2rem;
+    }
+}
+
+</style>
+</head>
+<body>
+    <header class="elheader">
+        <h1><em>10k c<span><i class="fas fa-heart"></i></span>ders</em></h1>
+        <nav>
+            <span><a href="about.html">About</a></span>
+            <!-- <span>Service</span> -->
+            <span><a href="contact.html">Contact</a></span>
+        </nav>
+    </header>
+
+    <article class="el1">
+        <div>
+            <h1 class="h1s2">Designed to transform you into a highly skilled Software Professional.</h1>
+            <p>we believe in unlocking the boundless potential of web design through innovation, creativity, and cutting-edge technology. As a premier destination for aspiring web designers and developers, we offer a comprehensive range of courses and programs tailored to nurture your skills and launch your career in the dynamic world of web design.
+
+            </p>
+        </div>
+        <img src="img1.png" class="img">
+    </article>
+
+    <article class="el1" style="background-color:var(--w);color:black">
+        <img src="img2.png" class="img">
+        <div>
+            <h1 class="h1s2">Learn to Code</h1>
+            <p>Learn to 'Think in code' and build problem-solving ability.</p>
+            <p>a roadmap that leads them through the intricacies of your logic. Just as explorers rely on detailed maps to navigate uncharted territories, programmers depend on well-annotated code to understand its purpose and functionality.
+
+            </p>
+        </div>
+    </article>
+
+    <article class="el1">
+        <div>
+            <h1 class="h1s2">We'll help you with
+                Interview Preparation</h1>
+            <p>Practice makes perfect! We offer mock interview sessions where you'll have the opportunity to simulate real interview scenarios with industry professionals. Receive constructive feedback on your performance, identify areas for improvement, and build confidence in your interview skills..</p>
+        </div>
+        <img src="img3.png" class="img">
+    </article>
+
+    <article class="el2">
+        <h1 class="h1s">Get an edge in the pursuit of your dream career</h1>
+        <div class="el2grid">
+            <div>
+            <div style="text-align: center;"><i class="fas fa-rocket"></i></div>
+            <h3>Web Design Fundamentals: </h3>
+            <div>Lay the groundwork for your journey into web design with courses covering HTML, CSS, and responsive design principles.
+            </div>
+            </div>
+
+            <div>
+                <div style="text-align: center;"><i class="fas fa-code"></i></div>
+                <h3>Advanced Web Development: </h3>
+                <div>Take your skills to the next level with advanced courses in JavaScript, frameworks like React and Angular, and backend development.</div>
+            </div>
+
+            <div>
+                <div style="text-align: center;"><i class="fas fa-mobile-alt"></i></div>
+
+                <h3>UI Design</h3>
+                <div>Master the art of user interface and create visually stunning interfaces that captivate audiences.</div>
+
+            </div>
+
+            <div>
+                <div style="text-align: center;"><i class="fas fa-hands-helping"></i></div>
+                <h3>UX Design</h3>
+                <div>Master the art of user interface and user experience design, learning to create intuitive</div>
+
+            </div>
+
+            <div>
+                <div style="text-align: center;"><i class="fas fa-bullseye"></i></div>
+                <h3>Graphic Design Integration: </h3>
+                <div>Explore the intersection of graphic design and web development, combining aesthetics with functionality to create immersive digital experiences.</div>
+            </div>
+
+            <div>
+                <div style="text-align: center;"><i class="fas fa-user-tie"></i></div>
+                <h3>E-Commerce Solutions: </h3>
+                <div>Dive into the world of online commerce with courses focused on e-commerce platforms, payment gateways, and digital marketing strategies.</div>
+            </div>
+
+          
+
+         </div>
+
+    </article>
+
+    <article  class="el3">
+        <h1  class="h1s2">Companies have hired our learners</h1>
+        <img src="hired.png" width="100%" height="100%"><br><br>
+        <button class="book" ><i class="fas fa-phone" ></i> Book a call</button>
+    </article>
+
+    <article class="el1" style="background-color:var(--b);color:white">
+        <img src="img4.png" class="img">
+        <div>
+            <h1 class="h1s2">Your Journey Starts Here:</h1>
+            <p>Whether you're a beginner looking to embark on an exciting new career path or a seasoned professional seeking to expand your skill set, [Institute Name] is your gateway to success in the world of web design and development. Join us and unleash your creativity, forge meaningful connections, and embark on a journey of lifelong learning and growth.
+                .</p>
+        </div>
+    </article>
+
+    <article style="background-color: white;text-align: center;">
+        <h1 class="h1s">Mentor Community</h1>
+        <marquee behavior="reverse" style="white-space: nowrap;" direction="right" scrollamount="10"><img src="scroll1.png">
+        </marquee>
+        <marquee behavior="" direction="" scrollamount="0"><img src="scroll2.png">
+        </marquee>
+        <marquee behavior="scroll" direction="left" scrollamount="10"><img src="scroll3.png">
+        </marquee>
+        
+    </article>
+
+    <article  class="el3">
+        <h1 class="h1s">FEATURED IN</h1>
+         <img src="img5.png" width="100%" height="100%"><br><br>
+     </article> 
+     
+    <article  class="el3">
+             <img src="img6.png" width="100%" height="100%"><br><br>
+    </article> 
+    
+
+
+
+    <footerr  class="elfooter">
+        <div>
+            <h4>Company</h4>
+            <div>About 10k coders</div>
+            <div>Contact & support</div>
+            <div>Privacy</div>
+        </div>
+
+        <div>
+            <h4>Services</h4>
+            <div>Trainings</div>
+            <div>Placements</div>
+            <div>Hiring</div>
+        </div>
+
+        <div>
+            <h4>Resources</h4>
+            <div>Blogs & guides</div>
+            <div>premium support</div>
+            <div>Our services</div>
+        </div>
+    </footer>
+</body>
+</html>
